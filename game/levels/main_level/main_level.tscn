@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://bv3mf3dpa3svf"]
 
-[ext_resource type="PackedScene" path="res://game/levels/level_base.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://cr5vbjst0t4fg" path="res://game/levels/level_base.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bgjtcie7wurmd" path="res://components/prototype/cube_dark.tscn" id="2"]
 [ext_resource type="Environment" uid="uid://er867l7dl10j" path="res://default_env.tres" id="2_swwwv"]
 [ext_resource type="PackedScene" uid="uid://bs0pywkyfxmsa" path="res://components/prototype/ground_dark.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://components/prototype/ramp_dark.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cbfjux6wknvf8" path="res://components/prototype/ramp_dark.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://vm423o6hdlya" path="res://components/helpers/zone_switch_area.tscn" id="5"]
 
 [sub_resource type="BoxShape3D" id="4"]

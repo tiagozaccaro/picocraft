@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5wek3bkiej43"]
+
+[ext_resource type="Texture2D" uid="uid://bnlt48mtpplf3" path="res://addons/kenney_prototype_textures/dark/texture_13.png" id="1_0iob3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bw6nj"]
+albedo_texture = ExtResource("1_0iob3")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_de4rd"]
+material = SubResource("StandardMaterial3D_bw6nj")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sd2yy"]
+
+[node name="CubeDark" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_mask = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_de4rd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_sd2yy")

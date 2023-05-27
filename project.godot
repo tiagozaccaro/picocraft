@@ -22,7 +22,7 @@ GameState="*res://game/game_state.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg", "res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/multimesh_scatter/plugin.cfg", "res://addons/sketchfab/plugin.cfg", "res://addons/vrm/plugin.cfg")
 
 [godot_xr_tools]
 
@@ -52,8 +52,6 @@ common/drop_mouse_on_gui_input_disabled=true
 
 [rendering]
 
-renderer/rendering_method="mobile"
-textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_environment="res://default_env.tres"
 
 [xr]
