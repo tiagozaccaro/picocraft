@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://54ad0lso7k60"]
+
+[ext_resource type="Texture2D" uid="uid://drx8fsce0jycc" path="res://assets/splash/splash.png" id="1_6ntqt"]
+[ext_resource type="Theme" uid="uid://gpfqrce5y717" path="res://assets/themes/kenneyUI-blue.tres" id="1_xruam"]
+[ext_resource type="PackedScene" uid="uid://04kblimio5ed" path="res://src/ui/download_manager.tscn" id="2_lt1ob"]
+[ext_resource type="PackedScene" uid="uid://diravdsc0p0s7" path="res://src/ui/minecraft_instance.tscn" id="3_5t4iy"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchor_right = 1.331
+anchor_bottom = 0.697
+offset_right = -0.500061
+offset_bottom = -3.80002
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.998012, 1.00299)
+theme = ExtResource("1_xruam")
+
+[node name="Minecraft" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Logo" type="TextureRect" parent="Minecraft"]
+layout_mode = 2
+texture = ExtResource("1_6ntqt")
+
+[node name="MinecraftInstance" parent="Minecraft" instance=ExtResource("3_5t4iy")]
+layout_mode = 2
+
+[node name="DownloadManager" parent="Minecraft" instance=ExtResource("2_lt1ob")]
+visible = false
+layout_mode = 2

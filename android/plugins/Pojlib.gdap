@@ -1,0 +1,8 @@
+[config]
+
+name="pojlib"
+binary_type="local"
+binary="pojlib/pojlib-debug.aar"
+
+[dependencies]
+remote=["com.google.guava:guava:31.0.1-jre", "com.google.code.gson:gson:2.10.1", "commons-io:commons-io:2.11.0", "commons-codec:commons-codec:1.15", "com.google.android.material:material:1.8.0"]

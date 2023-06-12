@@ -10,19 +10,26 @@ config_version=5
 
 [application]
 
-config/name="Godot XR Template"
-run/main_scene="res://game/main.tscn"
+config/name="PicoCraft"
+run/main_scene="res://src/game/main.tscn"
 config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [autoload]
 
 XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
-GameState="*res://game/game_state.gd"
+GameState="*res://src/game/game_state.gd"
+MinecraftManager="*res://src/scripts/minecraft/minecraft_manager.gd"
+
+[display]
+
+window/size/viewport_width=500
+window/size/viewport_height=400
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg", "res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/multimesh_scatter/plugin.cfg", "res://addons/sketchfab/plugin.cfg", "res://addons/vrm/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
 
 [godot_xr_tools]
 
@@ -52,6 +59,7 @@ common/drop_mouse_on_gui_input_disabled=true
 
 [rendering]
 
+textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_environment="res://default_env.tres"
 
 [xr]

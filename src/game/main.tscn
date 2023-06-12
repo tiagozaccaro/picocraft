@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cue44xpfkijbs"]
+
+[ext_resource type="PackedScene" uid="uid://bnqnnnet4dw12" path="res://addons/godot-xr-tools/staging/staging.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://drx8fsce0jycc" path="res://assets/splash/splash.png" id="2"]
+
+[node name="Main" instance=ExtResource("1")]
+main_scene = "res://src/game/levels/main_level/main_level.tscn"
+
+[node name="LoadingScreen" parent="." index="2"]
+splash_screen = ExtResource("2")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://diravdsc0p0s7"]
+
+[ext_resource type="Theme" uid="uid://gpfqrce5y717" path="res://assets/themes/kenneyUI-blue.tres" id="1_fvy2a"]
+[ext_resource type="Script" path="res://src/ui/minecraft_version.gd" id="2_x27kq"]
+[ext_resource type="Script" path="res://src/ui/create_instance.gd" id="3_1ucpf"]
+
+[node name="MinecraftInstance" type="Control"]
+layout_mode = 3
+anchor_right = 1.332
+anchor_bottom = 0.26
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fvy2a")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 663.0
+offset_bottom = 100.0
+
+[node name="Form" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Instance" type="VBoxContainer" parent="VBoxContainer/Form"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/Form/Instance"]
+layout_mode = 2
+text = "Instance Name"
+
+[node name="MinecraftInstance" type="TextEdit" parent="VBoxContainer/Form/Instance"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Minecraft Instance Name"
+
+[node name="Version" type="VBoxContainer" parent="VBoxContainer/Form"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Form/Version"]
+layout_mode = 2
+text = "Version"
+
+[node name="MinecraftVersion" type="ItemList" parent="VBoxContainer/Form/Version"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_x27kq")
+
+[node name="CreateInstance" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Create Instance"
+script = ExtResource("3_1ucpf")
